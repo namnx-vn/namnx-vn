@@ -1,4 +1,4 @@
-# 👋 Nguyễn Xuân Nam — Frontend Architect / AI Engineer
+# 👋 Nguyễn Xuân Nam — Senior Frontend / AI Engineer
 
 <p align="center">
   <img src="./assets/banner.svg" alt="Nguyen Xuan Nam — Frontend Architect / AI Engineer" width="100%">
@@ -299,11 +299,11 @@ I approach frontend system design through several layers:
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=NamAppro&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=namnx-vn&show_icons=true&hide_border=true&theme=transparent&rank_icon=github" alt="GitHub stats">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NamAppro&layout=compact&hide_border=true&theme=transparent" alt="Top languages">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=namnx-vn&layout=compact&hide_border=true&theme=transparent" alt="Top languages">
 </p>
 
 ---
@@ -311,7 +311,7 @@ I approach frontend system design through several layers:
 ## 📈 Activity Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=NamAppro&theme=github-compact&hide_border=true" alt="GitHub activity graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=namnx-vn&theme=github-compact&hide_border=true" alt="GitHub activity graph">
 </p>
 
 ---
@@ -319,7 +319,7 @@ I approach frontend system design through several layers:
 ## 🔥 Streak Stats
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=NamAppro&theme=transparent&hide_border=true" alt="GitHub streak">
+  <img src="https://streak-stats.demolab.com?user=namnx-vn&theme=transparent&hide_border=true" alt="GitHub streak">
 </p>
 
 ---
@@ -327,7 +327,7 @@ I approach frontend system design through several layers:
 ## 🏆 GitHub Trophy
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=NamAppro&theme=flat&no-frame=true&no-bg=true&margin-w=8" alt="GitHub trophies">
+  <img src="https://github-profile-trophy.vercel.app/?username=namnx-vn&theme=flat&no-frame=true&no-bg=true&margin-w=8" alt="GitHub trophies">
 </p>
 
 ---
@@ -504,7 +504,7 @@ GitHub Actions are included for:
 
 ## 📬 Contact
 
-- GitHub: [@NamAppro](https://github.com/NamAppro)
+- GitHub: [@namnx-vn](https://github.com/namnx-vn)
 - LinkedIn: add your public profile URL
 - Email: add your professional email
 

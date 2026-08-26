@@ -2,7 +2,7 @@
 
 ## GitHub Profile
 
-The profile repository must use the exact username: `NamAppro/NamAppro`.
+The profile repository must use the exact username: `namnx-vn/namnx-vn`.
 
 1. Create the public repository manually on GitHub.
 2. Copy this project into it.

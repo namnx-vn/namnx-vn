@@ -3,7 +3,7 @@ export const site = {
   shortName: "Nam",
   role: "Senior Frontend Engineer · Frontend Architect · AI Engineer",
   location: "Vietnam",
-  github: "https://github.com/NamAppro",
+  github: "https://github.com/namnx-vn",
   linkedin: "https://www.linkedin.com/",
   description: "Building scalable frontend systems, developer platforms, and AI-assisted engineering workflows.",
 };

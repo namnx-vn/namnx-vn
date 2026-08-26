@@ -1,0 +1,27 @@
+name: 🔄 README Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - assets/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate profile
+        run: |
+          test -s README.md
+          test -s assets/banner.svg
+          grep -q "Nguyễn Xuân Nam" README.md
+          grep -q "namnx-vn" README.md

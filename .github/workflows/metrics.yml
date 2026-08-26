@@ -1,0 +1,24 @@
+name: 📊 GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: namnx-vn
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Ho_Chi_Minh
