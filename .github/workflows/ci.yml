@@ -1,16 +1,70 @@
-name: CI
+name: ✅ Profile Quality
+
 on:
   push:
+    branches:
+      - master
+    paths:
+      - README.md
+      - AGENTS.md
+      - assets/**
+      - .github/workflows/**
   pull_request:
+    branches:
+      - master
+    paths:
+      - README.md
+      - AGENTS.md
+      - assets/**
+      - .github/workflows/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm install
-      - run: npm run build
-      - run: npm test
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate required profile files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s README.md
+          test -s AGENTS.md
+          test -s assets/banner.svg
+          grep -q "Nguyễn Xuân Nam" README.md
+          grep -q "namnx-vn" README.md
+
+      - name: Validate local README assets
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          readme = Path("README.md").read_text(encoding="utf-8")
+          refs = set(re.findall(r'(?:src|href)=["\'](\./[^"\']+)["\']', readme))
+          refs.update(re.findall(r'!\[[^\]]*\]\((\./[^)]+)\)', readme))
+
+          missing = []
+          for ref in sorted(refs):
+              path = Path(ref.removeprefix("./").split("?", 1)[0].split("#", 1)[0])
+              if not path.exists():
+                  missing.append(str(path))
+
+          if missing:
+              raise SystemExit("Missing local README assets: " + ", ".join(missing))
+
+          print(f"Validated {len(refs)} local README references")
+
+      - name: Reject OS metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '(^|/)\.DS_Store$'; then
+            echo "Tracked .DS_Store files are not allowed"
+            exit 1
+          fi
