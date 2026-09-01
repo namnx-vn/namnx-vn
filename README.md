@@ -221,41 +221,6 @@ I am most interested in AI workflows where the model is surrounded by strong det
 
 ---
 
-## GitHub activity
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=namnx-vn&show_icons=true&hide_border=true&theme=transparent&rank_icon=github"
-    alt="GitHub statistics for namnx-vn"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=namnx-vn&layout=compact&hide_border=true&theme=transparent"
-    alt="Most used languages across public GitHub repositories"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=namnx-vn&theme=github-compact&hide_border=true"
-    alt="GitHub contribution activity graph"
-  />
-</p>
-
-### Contribution snake
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
-    <img src="./assets/github-contribution-grid-snake.svg" alt="GitHub contribution snake" />
-  </picture>
-</p>
-
----
-
 ## Engineering philosophy
 
 > **Build systems that make the next engineer faster.**
